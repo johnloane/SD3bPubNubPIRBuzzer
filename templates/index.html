@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title> Intruder Detection System </title>
+	<script>https://cdn.pubnub.com/sdk/javascript/pubnub.4.29.8.js</script>
+	<script>https://cdn.pubnub.com/sdk/javascript/pubnub.4.29.8.min.js</script>
+	<script src="static/js/main.js"></script>
+
+</head>
+<body onload = "keep_alive(); time();">
+	<link rel ="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+	<h1> Intruder Detection System </h1>
+	<ul>
+		<a><li>Connection: <span id= "Connection_id">...</span></li></a>
+	</ul>
+	<div>
+		<h3>Motion: <span id="Motion_id"></span></h3>
+		<label><input type="checkbox" id="buzzer" onclick="handleClick(this);">Buzzer On</label>
+	</div>
+</body>
